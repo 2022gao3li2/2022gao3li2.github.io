@@ -1,16 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; URL={{ page.ref }}" />
-    <title>{{ page.title }}</title>
-</head>
-
-<body>
-    Click <a href="{{ page.ref }}">here</a> if you are not redirected.
-</body>
-
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <link rel="canonical" href="{{ page.ref }}">
+  <script>location="{{ page.ref }}"</script>
+  <meta http-equiv="refresh" content="0; URL={{ page.ref }}">
+  <meta name="robots" content="noindex">
+  <h1>Redirecting&hellip;</h1>
+  <a href="{{ page.ref }}">Click here if you are not redirected.</a>
 </html>
